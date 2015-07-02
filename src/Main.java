@@ -30,7 +30,7 @@ public class Main {
 		if(!conn.open())
 			System.exit(0);
 		
-		Database dpanel = new Database();
+		Database dpanel = new Database(conn);
 		frame.setSize(800,600);
 		frame.add(dpanel);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -36,4 +36,13 @@ public class Connector {
 		System.out.println("Connection Established");
 		return true;
 	}
+	
+	public ResultSet executeQuery(String s) throws SQLException{
+		return stat.executeQuery(s);
+	}
+	public void executeUpdate(String s) throws SQLException{
+		stat.executeUpdate(s);
+	}
+	
+	
 }
